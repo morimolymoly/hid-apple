@@ -329,8 +329,7 @@ static __u8 *apple_report_fixup(struct hid_device *hdev, __u8 *rdesc,
 {
 	struct apple_sc *asc = hid_get_drvdata(hdev);
 
-	if(*rsize >=71
-			&& rdesc[70] == 0x65 && rdesc[64] == 0x65) {
+	if(*rsize >=71 && rdesc[70] == 0x65 && rdesc[64] == 0x65) {
 		hid_info(hdev,
 			 "fixing up Magic Keyboard JIS report descriptor\n");
 		rdesc[64] = rdesc[70]= 0xe7;
