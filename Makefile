@@ -8,7 +8,9 @@ clean:
 	rm -f *.o *.ko *.mod.c Module.symvers modules.order
 
 install: all
+	sudo modprobe -r hid-apple
 	sudo insmod hid-apple.ko
 
 uninstall: all
 	sudo rmmod hid-apple.ko
+	sudo modprobe hid-apple
