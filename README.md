@@ -12,3 +12,9 @@ If they are recognized, it is working!
 You need to auto load this kernel module. (ref https://okchan08.hateblo.jp/entry/2019/03/21/203553)
 
 And also, you need to disable original hid-apple driver.(ref https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/preventing-kernel-modules-from-being-automatically-loaded-at-system-boot-time_managing-kernel-modules)
+
+# Tested Environment
+* Ubuntu 20.04(GNOME)
+* Ubuntu 20.10(GNOME)
+* Ubuntu 21.04(GNOME)
+* Ubuntu 21.04(KDE Plasma)
